@@ -23,6 +23,16 @@ body {
     background-color: #ffffff;
 }
 
+footer {
+    font-family: 'Work Sans', sans-serif;
+
+    max-width: var(--content-max-with);
+    padding-left: var(--content-padding);
+    padding-right: var(--content-padding);
+    margin: 0 auto;
+    background-color: #ffffff;
+}
+
 html{
     scroll-behavior: smooth; 
 }
