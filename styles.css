@@ -451,9 +451,6 @@ html{
     #hamburger-menu:hover div{
         background: #006DC7;
     }
-}
-
-@media (max-width: 700px){
 
     .about{
         font-size: 24px;
@@ -473,6 +470,11 @@ html{
     .project-card{
         width: 100%
     }
+}
+
+@media (max-width: 700px){
+
+
 }
 
 
