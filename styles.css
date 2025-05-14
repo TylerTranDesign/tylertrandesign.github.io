@@ -124,6 +124,7 @@ html{
 
 #inactive-page:hover{
     color: #006DC7;
+    font-weight: 600;
 }
 
 #active-page{
@@ -136,6 +137,7 @@ html{
 
 #active-page:hover{
     color: #111111;
+    font-weight: 800;
 }
 
 /* ----------------------Footer---------------------- */
@@ -166,7 +168,7 @@ html{
 .about{
     font-size: 24px;
     font-weight: 400;
-    width: 540px;
+    width: 50%;
     line-height: 34px;
     color: #000000;
     text-align: center;
@@ -244,6 +246,15 @@ html{
     margin-bottom: 20px;
 }
 
+.divider-heading-middle{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
 .divider-heading-text{
     color: black;
     font-size: 24px;
@@ -263,6 +274,11 @@ html{
 .project-card{
     width: 100%;
 }
+
+#project-gallery{
+    padding-bottom: 60px;
+}
+
 .project-thumbnail{
     width: 100%;
     height: auto;
@@ -277,13 +293,14 @@ html{
     width: fit-content;
     block-size: fit-content;
     flex-shrink: 0;
-    margin-bottom: 20px;
+    margin-bottom: 16px;
 }
 
 .project-description{
     color: black;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 400;
+    line-height: 25px;
     width: fit-content;
     block-size: fit-content;
     flex-shrink: 0;
@@ -344,25 +361,35 @@ html{
 
 #project-intro{
     padding-top: calc(var(--header-height) + 60px);
+    width: 80%;
     display: grid;
-    grid-template-columns: 1fr 40%;
-    gap: 30px;
+    grid-template-columns: 1fr 30%;
+    margin: 0 auto;
+    gap: 60px;
+
 }
 
 #project-bio-title{
     font-size: 40px;
     font-weight: 600;
+    padding-bottom: 30px;
 }
 
 #project-bio{
     font-size: 16px;
     font-weight: 400;
+    line-height: 25px;
 }
 
 #project-skills{
-    padding-top: 16px;
     font-size: 24px;
-    font-weight: 500;
+    font-weight: 600;
+    padding-top: 16px;
+}
+
+#list-item{
+    text-decoration: none;
+    list-style: none;
 }
 
 .project-main-image{
@@ -371,8 +398,68 @@ html{
 
 .project-main-image img{
     display: block;
-    width: 75%;
+    width: 100%;
     margin: auto;
+    margin-top: 60px;
+    border-radius: 30px;
+}
+
+.project-section{
+    margin-top: 60px;;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+#project-section-title{
+    font-size: 24px;
+    font-weight: 600;
+}
+
+#project-section-text{
+    font-size: 16px;
+    font-weight: 400;
+    padding-left: 26px;
+}
+
+#project-section-image{
+    width: 100%;
+}
+
+.project-text{
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 auto;
+    gap: 30px;
+    transition: all 0.3s ease;
+}
+
+#project-text-heading{
+    font-size: 24px;
+    font-weight: 600;
+}
+
+#project-text-body{
+    font-size: 16px;
+    line-height: 25px;
+    font-weight: 400;
+    padding-top: 12px;
+    transition: all 0.3s ease;
+}
+
+.project-image{
+    width: 80%;
+    border-radius: 30px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    transition: all 0.3s ease;
+}
+
+.project-image:hover{
+    scale: 103%;
 }
 
 /* ----------------------Responsive---------------------- */
@@ -464,7 +551,7 @@ html{
     .about{
         font-size: 24px;
         font-weight: 400;
-        width: 350px;
+        width: 75%;
         color: #000000;
         text-align: center;
         margin: 0 auto;
@@ -476,14 +563,39 @@ html{
         grid-template-columns: 1fr;
     }
 
+    #project-intro{
+        padding-top: calc(var(--header-height) + 60px);
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 0 auto;
+        gap: 20px;
+    }
+
     .project-card{
         width: 100%
     }
-}
 
-@media (max-width: 700px){
+    .project-text{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 0 auto;
+        gap: 0px;
+    }
 
+    #project-text-body{
+        padding-top: 0px;
+    }
 
+    .project-image{
+        width: 100%;
+        border-radius: 30px;
+        display: block;
+        margin: 0 auto;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
 }
 
 
